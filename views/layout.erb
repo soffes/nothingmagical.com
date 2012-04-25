@@ -5,15 +5,10 @@
   <title>Nothing Magical</title>
   <link rel="author" href="humans.txt" />
   <link href="/style.css" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 <body>
-  <h1>Nothing Magical</h1>
-  <p>We're making some stuff we hope you'll like.</p>
-  <p>It's not ready yet.</p>
-  <form action="http://nothingmagical.createsend.com/t/j/s/qyukj/" method="post">
-    <input type="text" name="cm-qyukj-qyukj" placeholder="your@email.com" />
-    <input type="submit" value="I'm Curious" />
-  </form>
+  <%= yield %>
   <script type="text/javascript">var _gauges=_gauges||[];(function(){var t=document.createElement('script');t.async=true;t.id='gauges-tracker';t.setAttribute('data-site-id','4f7a9a00f5a1f56b90000010');t.src='//secure.gaug.es/track.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(t, s);})();</script>
 </body>
 </html>
