@@ -180,7 +180,7 @@ h1 > span:last-child span:nth-child(7) {
 
 h2 {
   color: #6e7b90;
-  font-size: 20px;
+  font-size: 27px;
   font-family: 'Novecentowide-Book';
   text-align: justify;
   height: 1.15em;
@@ -306,6 +306,10 @@ button:active {
   
   h1 > span {
     height: 30px;
+  }
+  
+  h2 {
+    font-size: 20px;
   }
   
   aside {
