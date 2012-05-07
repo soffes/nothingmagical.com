@@ -1,12 +1,6 @@
 /* Reset */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}q,blockquote{quotes:none}q:before,q:after,blockquote:before,blockquote:after{content:"";content:none}a img{border:none}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block}section,header,footer,nav,article,aside,figure{display:block;width:100%}mark,time,meter,progress{display:inline}
 
-/* Fonts */
-
- @font-face {font-family: 'Novecentowide-Bold';src: url('/fonts/223F1D_0_0.eot');src: url('/fonts/223F1D_0_0.eot?#iefix') format('embedded-opentype'),url('/fonts/223F1D_0_0.woff') format('woff'),url('/fonts/223F1D_0_0.ttf') format('truetype');}
-  
- @font-face {font-family: 'Novecentowide-Book';src: url('/fonts/223F1D_2_0.eot');src: url('/fonts/223F1D_2_0.eot?#iefix') format('embedded-opentype'),url('/fonts/223F1D_2_0.woff') format('woff'),url('/fonts/223F1D_2_0.ttf') format('truetype');}
-
 /* General */
 
 html {
@@ -15,22 +9,9 @@ html {
   -ms-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  background: #f8fafd;
-}
-
-aside {
-  position: fixed;
-  top: 0;
-  left: 0:
-  bottom: 0;
-  width: 20px;
-  height: 100%;
-  background: #cbd1dc;
-  border-right: 20px solid #e1e4ec;
 }
 
 header, section {
-  max-width: 640px;
   padding: 0 10px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
@@ -39,15 +20,15 @@ header, section {
 }
 
 header {
-  margin: 3em auto 2em;
+  margin: 0 auto 4em;
+  background: #ff1e00;
+  padding: 100px 0;
 }
 
 section {
-  padding: 0 10px 20px;
-}
-
-header img {
-  width: 100%
+  padding: 0 10px;
+  max-width: 640px;
+  margin-bottom: 2em;
 }
 
 body, input, button {
@@ -57,7 +38,7 @@ body, input, button {
 }
 
 a {
-  color: #3e69b0;
+  color: #0881b3;
   text-decoration: none;
   border-bottom: 1px solid transparent;
 }
@@ -71,128 +52,16 @@ p {
   line-height: 1.4em;
   text-align: justify;
   text-justify: distribute;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 h1 {
-  font-size: 100px;
-  margin-bottom: 10px;
-  line-height: 82px;
-  font-family: 'Novecentowide-Bold';
-  color: #132a50;
-}
-
-h1 > span {
-  display: block;
-  position: relative;
-  height: 72px;
-}
-
-h1 span span {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  height: 100%;
-}
-
-/* Nothing */
-/* N */
-h1 > span:first-child span:first-child {
-  width: 10.04784689%;
-  left: -1.40625%;
-}
-
-/* O */
-h1 > span:first-child span:nth-child(2) {
-  width: 11.802232855%;
-  left: 15.789473684%;
-}
-
-/* T */
-h1 > span:first-child span:nth-child(3) {
-  width: 9.56937799%;
-  left: 32.216905901%;
-}
-
-/* H */
-h1 > span:first-child span:nth-child(4) {
-  width: 9.728867624%;
-  left: 47.208931419%;
-}
-
-/* I */
-h1 > span:first-child span:nth-child(5) {
-  width: 2.711323764%;
-  left: 63.476874003%;
-}
-
-/* N */
-h1 > span:first-child span:nth-child(6) {
-  width: 10.04784689%;
-  left: 72.88676236%;
-}
-
-/* G */
-h1 > span:first-child span:nth-child(7) {
-  width: 11.323763955%;
-  left: 88.676236045%;
-}
-
-/* Magical */
-/* M */
-h1 > span:last-child span:first-child {
-  width: 11.111111111%;
-  left: -1.26984127%;
-  display: inline-block
-}
-
-/* A */
-h1 > span:last-child span:nth-child(2) {
-  width: 11.587301587%;
-  left: 16.666666667%;
-}
-
-/* G */
-h1 > span:last-child span:nth-child(3) {
-  width: 11.26984127%;
-  left: 32.698412698%;
-}
-
-/* I */
-h1 > span:last-child span:nth-child(4) {
-  width: 2.857142857%;
-  left: 50.476190476%;
-}
-
-/* C */
-h1 > span:last-child span:nth-child(5) {
-  width: 10.952380952%;
-  left: 59.682539683%;
-}
-
-/* A */
-h1 > span:last-child span:nth-child(6) {
-  width: 11.26984127%;
-  left: 75.238095238%;
-}
-
-/* L */
-h1 > span:last-child span:nth-child(7) {
-  width: 7.9365079377%;
-  right: 1.26984127%;
-}
-
-h2 {
-  color: #6e7b90;
-  font-size: 27px;
-  font-family: 'Novecentowide-Book';
-  text-align: justify;
-  height: 1.15em;
-}
-
-h2 span {
-  width: 100%;
-  display: inline-block;
+  width: 471px;
+  height: 165px;
+  background: url(/images/logo.png) no-repeat;
+  background-size: 471px 165px;
+  text-indent: -9009em;
+  margin: 0 auto;
 }
 
 /* Form */
@@ -299,24 +168,49 @@ button:active {
 }
 
 @media all and (max-width: 700px) {
-  header, section {
+  header {
+    padding: 30px 0;
+    margin-bottom: 30px;
+  }
+  
+  section {
     width: 300px;
   }
   
   h1 {
-    font-size: 40px;
-    line-height: 30px
+    width: 278px;
+    height: 321px;
+    background-image: url(/images/logo-narrow.png);
+    background-size: 278px 321px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  h1 {
+    background-image: url(/images/logo@2x.png);
+  }
+}
+
+@media all and (max-width: 700px) {
+  header {
+    padding: 30px 0;
+    margin-bottom: 30px;
   }
   
-  h1 > span {
-    height: 30px;
+  section {
+    width: 300px;
   }
   
-  h2 {
-    font-size: 20px;
+  h1 {
+    width: 173px;
+    height: 200px;
+    background-image: url(/images/logo-narrow.png);
+    background-size: 173px 200px;
   }
-  
-  aside {
-    display: none;
+}
+
+@media only screen and (max-width: 700px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  h1 {
+    background-image: url(/images/logo-narrow@2x.png);
   }
 }

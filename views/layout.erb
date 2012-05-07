@@ -4,40 +4,19 @@
   <meta charset="utf-8">
   <title>Nothing Magical</title>
   <link rel="author" href="humans.txt" />
-  <link href="/style.css" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/application.css" rel="stylesheet" type="text/css" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!-- Hey there my nerdy friend. The source for this site is at http://github.com/samsoffes/nothingmagical.com -->
 </head>
 <body>
   <header>
-    <!-- Have you ever tried to justify text on just one line? Who knew you can't do it. *sigh* -->
-    <h1>
-      <span>
-        <span>N</span>
-        <span>o</span>
-        <span>t</span>
-        <span>h</span>
-        <span>i</span>
-        <span>n</span>
-        <span>g</span>
-      </span>
-      <span>
-        <span>M</span>
-        <span>a</span>
-        <span>g</span>
-        <span>i</span>
-        <span>c</span>
-        <span>a</span>
-        <span>l</span>
-      </span>
-    </h1>
-    <h2>Ltd. Co. &mdash; Established Twenty Twelve<span></span></h2>
-    <!-- <img src="/logo.svg" alt="Nothing Magical Ltd. Co. — Estabilished Twenty Twelve" /> -->
+     <h1>Nothing Magical</h1>
   </header>
   <section>
     <%= yield %>
   </section>
-  <aside></aside>
+  <% if ENV['RACK_ENV'] == 'production' %>
   <script type="text/javascript">var _gauges=_gauges||[];(function(){var t=document.createElement('script');t.async=true;t.id='gauges-tracker';t.setAttribute('data-site-id','4f7a9a00f5a1f56b90000010');t.src='//secure.gaug.es/track.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(t, s);})();</script>
+  <% end %>
 </body>
 </html>
