@@ -15,6 +15,9 @@
   <section>
     <%= yield %>
   </section>
+  <footer>
+    &copy; 2012 Nothing Magical &mdash; <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%73%61%6d@%6e%6f%74%68%69%6e%67%6d%61%67%69%63%61%6c.%63%6f%6d">Contact</a>
+  </footer>
   <% if ENV['RACK_ENV'] == 'production' %>
   <script type="text/javascript">var _gauges=_gauges||[];(function(){var t=document.createElement('script');t.async=true;t.id='gauges-tracker';t.setAttribute('data-site-id','4f7a9a00f5a1f56b90000010');t.src='//secure.gaug.es/track.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(t, s);})();</script>
   <% end %>

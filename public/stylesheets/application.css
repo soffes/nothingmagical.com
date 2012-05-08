@@ -11,7 +11,7 @@ html {
   font-smoothing: antialiased;
 }
 
-header, section {
+header, section, footer {
   padding: 0 10px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
@@ -25,7 +25,7 @@ header {
   padding: 100px 0;
 }
 
-section {
+section, footer {
   padding: 0 10px;
   max-width: 640px;
   margin-bottom: 2em;
@@ -165,6 +165,16 @@ button:active {
   top: 1px;
 }
 
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+
+footer a {
+  color: #999;
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   h1 {
     background-image: url(/images/logo@2x.png);
@@ -177,7 +187,7 @@ button:active {
     margin-bottom: 30px;
   }
   
-  section {
+  section, footer {
     width: 300px;
   }
   
