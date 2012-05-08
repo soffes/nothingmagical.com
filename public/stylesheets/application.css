@@ -165,31 +165,13 @@ button:active {
   top: 1px;
 }
 
-@media all and (max-width: 700px) {
-  header {
-    padding: 30px 0;
-    margin-bottom: 30px;
-  }
-  
-  section {
-    width: 300px;
-  }
-  
-  h1 {
-    width: 278px;
-    height: 321px;
-    background-image: url(/images/logo-narrow.png);
-    background-size: 278px 321px;
-  }
-}
-
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   h1 {
     background-image: url(/images/logo@2x.png);
   }
 }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 640px) {
   header {
     padding: 30px 0;
     margin-bottom: 30px;
@@ -207,7 +189,7 @@ button:active {
   }
 }
 
-@media only screen and (max-width: 700px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+@media only screen and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   h1 {
     background-image: url(/images/logo-narrow@2x.png);
   }
