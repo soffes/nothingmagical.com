@@ -1,6 +1,6 @@
 /* TEAM */
 
 Creator: Sam Soffes
-Site: http://samsoff.es
-Twitter: samsoffes
-Location: San Francisco
+Site: http://soff.es
+Twitter: soffes
+Location: Louisville
