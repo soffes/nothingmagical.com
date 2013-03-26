@@ -19,6 +19,10 @@ section {
   p:last-child {
     margin-bottom: 0;
   }
+
+  @media #{$grater-small-media-query} {
+    padding: 40px 10px;
+  }
 }
 
 
