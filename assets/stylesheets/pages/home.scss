@@ -1,6 +1,29 @@
+a.app-store {
+  width: 175px;
+  height: 50px;
+
+  img {
+    width: 175px;
+    height: 50px;
+  }
+
+  &:hover {
+    border: 0;
+  }
+}
+
+section {
+  @include box-sizing(border-box);
+  padding: 40px 20px;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
 // About
 section#about {
-  padding: 20px;
   background: $about-color;
   color: #fff;
 }
@@ -8,49 +31,96 @@ section#about {
 
 // Cheddar
 section#cheddar {
-  padding: 20px;
   background: $cheddar-color;
   color: #fff;
+  text-align: center;
+
+  a {
+    color: #fff;
+  }
+
+  a.title {
+    display: block;
+    width: 269px;
+    height: 44px;
+    margin: 0 auto 1em;
+
+    &:hover {
+      border-bottom-color: transparent;
+    }
+
+    img {
+      width: 269px;
+      height: 44px;
+    }
+  }
+
+  p:last-child {
+    margin: 2em auto 0;
+  }
 }
 
 
 // Shares
 section#shares {
-  padding: 20px;
   background: #1d1d1d;
   color: #ccc;
+
+  p:last-child {
+    text-align: center;
+    margin: 2em auto 0;
+  }
+
+  @media #{$grater-small-media-query} {
+    text-align: center;
+  }
 }
 
 
 // Team
 section#team {
   background: #f7e47c;
-  padding: 20px;
-
-  h2 {
-    margin-bottom: 1em;
-  }
+  color: #4c4e53;
 
   a {
+    color: #bba633;
+  }
+
+  a.headshot {
     display: block;
     text-align: center;
-    color: #ae9b36;
+    width: 190px;
+    margin: 0 auto;
 
     &:hover {
       border-bottom: 1px transparent solid;
     }
+
+    span.photo {
+      width: 190px;
+      height: 190px;
+      display: block;
+      background: asset-url("soffes@2x.png") no-repeat;
+      background-size: 190px 190px;
+      margin: 0 auto 1em;
+    }
+
+    span.name {
+      display: block;
+    }
   }
 
-  span.photo {
-    width: 190px;
-    height: 190px;
-    display: block;
-    background: asset-url("soffes@2x.png") no-repeat;
-    background-size: 190px 190px;
-    margin: 0 auto 1em;
+  div {
+    margin-bottom: 0;
   }
 
-  span.name {
-    display: block;
+  @media #{$grater-small-media-query} {
+    div.grater {
+      text-align: center;
+
+      > div:first-child {
+        margin-bottom: 3em;
+      }
+    }
   }
 }

@@ -1,15 +1,12 @@
 @import "bourbon";
+@import "grater";
 @import "globals/variables";
 @import "components/reset";
 
 /* General */
 
-html {
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -ms-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-  font-smoothing: antialiased;
+html, body {
+  @include prefixer(font-smoothing, antialiased, webkit moz spec);
 }
 
 header {
@@ -20,7 +17,8 @@ header {
 
 body, input, button {
   color: #444;
-  font-family: 'Avenir Next W01 Thin';
+  font-family: 'Avenir Next W01 Light';
+  font-size: 20px;
 }
 
 a {
@@ -30,13 +28,13 @@ a {
 }
 
 a:hover {
+  @include transition(border 0.3s ease-in-out);
   border-bottom: 1px solid;
 }
 
 p {
   margin: 0 0 1em;
   line-height: 1.4em;
-  font-size: 20px;
 }
 
 h1 {
@@ -48,11 +46,17 @@ body > header img {
   height: 120px;
   margin: 0 auto;
   display: block;
+
+  @media #{$grater-small-media-query} {
+    width: 280px;
+    height: 84px;
+  }
 }
 
 h2 {
   font-family: 'Avenir Next W10 Demi';
-  font-size: 1.4em;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
 }
 
 @import "components/form";
@@ -66,18 +70,6 @@ footer {
 
 footer a {
   color: #999;
-}
-
-
-@media all and (max-width: 640px) {
-  header {
-    padding: 30px 0;
-    margin-bottom: 30px;
-  }
-
-  section, footer {
-    width: 300px;
-  }
 }
 
 @import "pages/*";
