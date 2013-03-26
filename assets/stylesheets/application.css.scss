@@ -1,0 +1,84 @@
+@import "bourbon";
+@import "globals/variables";
+@import "components/reset";
+
+/* General */
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+header {
+  margin: 0 auto;
+  background: $red-color;
+  padding: 100px 0;
+}
+
+body, input, button {
+  color: #444;
+  font-family: 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+a {
+  color: #0881b3;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+}
+
+p {
+  margin: 0 0 1em;
+  line-height: 1.4em;
+  font-size: 20px;
+}
+
+h1 {
+  display: none;
+}
+
+body > header img {
+  width: 400px;
+  height: 120px;
+  margin: 0 auto;
+  display: block;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+@import "components/form";
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+  padding-bottom: 30px;
+}
+
+footer a {
+  color: #999;
+}
+
+
+@media all and (max-width: 640px) {
+  header {
+    padding: 30px 0;
+    margin-bottom: 30px;
+  }
+
+  section, footer {
+    width: 300px;
+  }
+}
+
+@import "pages/*";

@@ -1,0 +1,56 @@
+// About
+section#about {
+  padding: 20px;
+  background: $about-color;
+  color: #fff;
+}
+
+
+// Cheddar
+section#cheddar {
+  padding: 20px;
+  background: $cheddar-color;
+  color: #fff;
+}
+
+
+// Shares
+section#shares {
+  padding: 20px;
+  background: #1d1d1d;
+  color: #ccc;
+}
+
+
+// Team
+section#team {
+  background: #f7e47c;
+  padding: 20px;
+
+  h2 {
+    margin-bottom: 1em;
+  }
+
+  a {
+    display: block;
+    text-align: center;
+    color: #ae9b36;
+
+    &:hover {
+      border-bottom: 1px transparent solid;
+    }
+  }
+
+  span.photo {
+    width: 190px;
+    height: 190px;
+    display: block;
+    background: asset-url("soffes@2x.png") no-repeat;
+    background-size: 190px 190px;
+    margin: 0 auto 1em;
+  }
+
+  span.name {
+    display: block;
+  }
+}

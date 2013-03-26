@@ -1,0 +1,100 @@
+form {
+  margin: 3em 0 1em;
+  text-align: center;
+}
+
+::-webkit-input-placeholder {
+  color: #9a9ea8;
+}
+
+:-moz-placeholder {
+  color: #9a9ea8;
+}
+
+:-ms-input-placeholder {
+  color: #9a9ea8;
+}
+
+input[type="email"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  font-size: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1) inset;
+  background-color: white;
+  padding: 5px;
+  border: 1px solid #b8bbc2;
+  font-size: 18px;
+  width: 280px;
+  height: 32px;
+  margin: 0 0 0.5em;
+}
+
+input[type="email"]:focus {
+  -webkit-box-shadow: 0 0 4px rgba(8, 129, 179, 0.5), 0 1px 4px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 0 4px rgba(8, 129, 179, 0.5), 0 1px 4px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 0 4px rgba(8, 129, 179, 0.5), 0 1px 4px rgba(0, 0, 0, 0.1) inset;
+  outline: 0;
+  border-color: #43acd7;
+}
+
+button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fcfcfd;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfd), color-stop(100%, #e4e7ee));
+  background-image: -webkit-linear-gradient(top, #fcfcfd, #e4e7ee);
+  background-image: -moz-linear-gradient(top, #fcfcfd, #e4e7ee);
+  background-image: -ms-linear-gradient(top, #fcfcfd, #e4e7ee);
+  background-image: -o-linear-gradient(top, #fcfcfd, #e4e7ee);
+  background-image: linear-gradient(top, #fcfcfd, #e4e7ee);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  border: 1px solid #959aa5;
+  cursor: pointer;
+  color: #606877;
+  height: 32px;
+  display: inline-block;
+  padding: 5px 8px;
+  vertical-align: top;
+  text-shadow: 0 1px 0 #fff;
+  font-size: 16px;
+}
+
+button:hover, button:focus {
+  background-color: #fcfcfd;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfd), color-stop(100%, #f0f2f6));
+  background-image: -webkit-linear-gradient(top, #fcfcfd, #f0f2f6);
+  background-image: -moz-linear-gradient(top, #fcfcfd, #f0f2f6);
+  background-image: -ms-linear-gradient(top, #fcfcfd, #f0f2f6);
+  background-image: -o-linear-gradient(top, #fcfcfd, #f0f2f6);
+  background-image: linear-gradient(top, #fcfcfd, #f0f2f6);
+}
+
+button:active {
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  background: #f0f2f6;
+  position: relative;
+  top: 1px;
+}
