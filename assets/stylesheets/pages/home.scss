@@ -20,8 +20,34 @@ section {
     margin-bottom: 0;
   }
 
+  div.grater > div {
+    margin-bottom: 0;
+  }
+
+  a.app-icon {
+    @include hide-text;
+    width: 256px;
+    height: 256px;
+    background-size: 256px 256px;
+    margin: 0 auto;
+    display: block;
+    background: no-repeat;
+
+    &:hover {
+      border-color: transparent;
+    }
+  }
+
   @media #{$grater-small-media-query} {
     padding: 40px 10px;
+
+    div.grater {
+      text-align: center;
+
+      > div:first-child {
+        margin-bottom: 3em;
+      }
+    }
   }
 }
 
@@ -35,7 +61,7 @@ section#about {
 
 // Cheddar
 section#cheddar {
-  background: $cheddar-color;
+  background: #0881b3;
   color: #fff;
   text-align: center;
 
@@ -59,6 +85,14 @@ section#cheddar {
     }
   }
 
+  a.app-icon {
+    background-image: asset-url("cheddar-icon.png");
+
+    @include hidpi {
+      background-image: asset-url("cheddar-icon@2x.png");
+    }
+  }
+
   p:last-child {
     margin: 2em auto 0;
   }
@@ -70,9 +104,21 @@ section#shares {
   background: #1d1d1d;
   color: #ccc;
 
+  a {
+    color: #ccc;
+  }
+
   p:last-child {
     text-align: center;
     margin: 2em auto 0;
+  }
+
+  a.app-icon {
+    background-image: asset-url("shares-icon.png");
+
+    @include hidpi {
+      background-image: asset-url("shares-icon@2x.png");
+    }
   }
 
   @media #{$grater-small-media-query} {
@@ -104,27 +150,17 @@ section#team {
       width: 190px;
       height: 190px;
       display: block;
-      background: asset-url("soffes@2x.png") no-repeat;
+      background: asset-url("soffes.png") no-repeat;
       background-size: 190px 190px;
       margin: 0 auto 1em;
+
+      @include hidpi {
+        background-image: asset-url("soffes@2x.png");
+      }
     }
 
     span.name {
       display: block;
-    }
-  }
-
-  div {
-    margin-bottom: 0;
-  }
-
-  @media #{$grater-small-media-query} {
-    div.grater {
-      text-align: center;
-
-      > div:first-child {
-        margin-bottom: 3em;
-      }
     }
   }
 }
