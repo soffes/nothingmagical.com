@@ -22,6 +22,7 @@ section {
 
   div.grater > div {
     margin-bottom: 0;
+    position: relative;
   }
 
   a.app-icon {
@@ -29,9 +30,13 @@ section {
     width: 256px;
     height: 256px;
     background-size: 256px 256px;
-    margin: 0 auto;
     display: block;
     background: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -128px 0 0 -128px;
+
 
     &:hover {
       border-color: transparent;
@@ -44,9 +49,20 @@ section {
     div.grater {
       text-align: center;
 
+      > div {
+        height: auto !important;
+      }
+
       > div:first-child {
         margin-bottom: 3em;
       }
+    }
+
+    a.app-icon {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin: 0 auto;
     }
   }
 }
@@ -85,12 +101,12 @@ section#cheddar {
     }
   }
 
-  a.app-icon {
-    background-image: asset-url("cheddar-icon.png");
+  div.grater > div {
+    height: 330px;
+  }
 
-    @include hidpi {
-      background-image: asset-url("cheddar-icon@2x.png");
-    }
+  a.app-icon {
+    background-image: asset-url("cheddar-icon.svg");
   }
 
   p:last-child {
@@ -111,6 +127,10 @@ section#shares {
   p:last-child {
     text-align: center;
     margin: 2em auto 0;
+  }
+
+  div.grater > div {
+    height: 301px;
   }
 
   a.app-icon {
