@@ -147,6 +147,58 @@ section#shares {
 }
 
 
+// Roon
+section#roon {
+  background: #f9fbfc;
+  color: #909396;
+
+  // a {
+  //   color: #fff;
+  // }
+
+  em {
+    background-color: #fdffb6;
+    padding: 2px;
+    box-shadow: #fdffb6 0 0 5px;
+    color: #21272d;
+  }
+
+  a.title {
+    display: block;
+    width: 269px;
+    height: 44px;
+    margin: 0 auto 1em;
+
+    &:hover {
+      border-bottom-color: transparent;
+    }
+
+    img {
+      width: 269px;
+      height: 44px;
+    }
+  }
+
+  div.grater > div {
+    height: 330px;
+  }
+
+  a.app-icon {
+    box-shadow: 0 0 4px rgba(144, 147, 150, 0.8);
+    border-radius: 43px;
+    background-image: asset-url("roon-icon.png");
+
+    @include hidpi {
+      background-image: asset-url("roon-icon@2x.png");
+    }
+  }
+
+  p:last-child {
+    margin: 2em auto 0;
+  }
+}
+
+
 // Team
 section#team {
   background: #f7e47c;
