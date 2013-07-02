@@ -17,7 +17,9 @@ header {
 
 body, input, button {
   color: #444;
-  font-family: 'Avenir Next W01 Light';
+  font-family: 'Gotham A', 'Gotham B';
+  font-weight: 400;
+  font-style: normal;
   font-size: 20px;
 }
 
@@ -37,6 +39,10 @@ p {
   line-height: 1.4em;
 }
 
+p.small {
+  font-size: 0.8em;
+}
+
 h1 {
   display: none;
 }
@@ -54,7 +60,9 @@ body > header img {
 }
 
 h2 {
-  font-family: 'Avenir Next W10 Demi';
+  font-family: 'Gotham A', 'Gotham B';
+  font-weight: 700;
+  font-style: normal;
   font-size: 1.2em;
   margin-bottom: 0.5em;
 }

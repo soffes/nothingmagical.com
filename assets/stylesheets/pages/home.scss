@@ -23,6 +23,11 @@ section {
   div.grater > div {
     margin-bottom: 0;
     position: relative;
+
+    &:last-child {
+      width: 256px;
+      height: 256px;
+    }
   }
 
   a.app-icon {
@@ -79,7 +84,6 @@ section#about {
 section#cheddar {
   background: #0881b3;
   color: #fff;
-  text-align: center;
 
   a {
     color: #fff;
@@ -101,15 +105,12 @@ section#cheddar {
     }
   }
 
-  div.grater > div {
-    height: 330px;
-  }
-
   a.app-icon {
     background-image: asset-url("cheddar-icon.svg");
   }
 
   p:last-child {
+    text-align: center;
     margin: 2em auto 0;
   }
 }
@@ -127,10 +128,6 @@ section#shares {
   p:last-child {
     text-align: center;
     margin: 2em auto 0;
-  }
-
-  div.grater > div {
-    height: 301px;
   }
 
   a.app-icon {
@@ -151,10 +148,6 @@ section#shares {
 section#roon {
   background: #f9fbfc;
   color: #909396;
-
-  // a {
-  //   color: #fff;
-  // }
 
   em {
     background-color: #fdffb6;
@@ -179,10 +172,6 @@ section#roon {
     }
   }
 
-  div.grater > div {
-    height: 330px;
-  }
-
   a.app-icon {
     box-shadow: 0 0 4px rgba(144, 147, 150, 0.8);
     border-radius: 43px;
@@ -194,6 +183,7 @@ section#roon {
   }
 
   p:last-child {
+    text-align: center;
     margin: 2em auto 0;
   }
 }
