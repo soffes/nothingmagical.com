@@ -42,6 +42,10 @@ section {
     left: 50%;
     margin: -128px 0 0 -128px;
 
+    img {
+      width: 100%;
+      height: 100%;
+    }
 
     &:hover {
       border-color: transparent;
@@ -105,10 +109,6 @@ section#cheddar {
     }
   }
 
-  a.app-icon {
-    background-image: asset-url("cheddar-icon.svg");
-  }
-
   p:last-child {
     text-align: center;
     margin: 2em auto 0;
@@ -118,24 +118,16 @@ section#cheddar {
 
 // Shares
 section#shares {
-  background: #1d1d1d;
-  color: #ccc;
+  background: $shares-green-color;
+  color: #fff;
 
   a {
-    color: #ccc;
+    color: #fff;
   }
 
   p:last-child {
     text-align: center;
     margin: 2em auto 0;
-  }
-
-  a.app-icon {
-    background-image: asset-url("shares-icon.png");
-
-    @include hidpi {
-      background-image: asset-url("shares-icon@2x.png");
-    }
   }
 
   @media #{$grater-small-media-query} {
@@ -208,7 +200,7 @@ section#team {
       border-bottom: 1px transparent solid;
     }
 
-    span.photo {
+    img {
       width: 190px;
       height: 190px;
       display: block;
