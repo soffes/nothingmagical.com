@@ -167,11 +167,7 @@ section#roon {
   a.app-icon {
     box-shadow: 0 0 4px rgba(144, 147, 150, 0.8);
     border-radius: 43px;
-    background-image: asset-url("roon-icon.png");
-
-    @include hidpi {
-      background-image: asset-url("roon-icon@2x.png");
-    }
+    overflow: hidden;
   }
 
   p:last-child {
