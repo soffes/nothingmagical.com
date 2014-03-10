@@ -5,7 +5,7 @@
 
 /* General */
 
-html {
+html, button, input {
   -webkit-font-smoothing: antialiased;
 }
 
@@ -24,7 +24,7 @@ body, input, button {
   font-family: 'Whitney A', 'Whitney B';
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 a {
@@ -70,13 +70,51 @@ h2 {
   margin-bottom: 0.5em;
 }
 
-@import "components/form";
+input {
+  @include box-sizing(border-box);
+  background: #f7f7f7;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 300px;
+  height: 44px;
+  outline: 0;
+  border: 2px solid #f7f7f7;
+  font-family: 'Whitney A', 'Whitney B';
+  font-weight: 400;
+  font-size: 18px;
+  color: #333;
+  margin: 0 0 0.25em;
+  position: relative;
+  top: 1px;
+
+  &:focus {
+    border: 2px solid #59d56e;
+  }
+}
+
+button {
+  background: #59d56e;
+  padding: 10px 15px;
+  font-family: 'Whitney A', 'Whitney B';
+  font-weight: 600;
+  font-size: 18px;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  margin: 0;
+  height: 44px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
 
 footer {
   text-align: center;
-  font-size: 14px;
+  font-size: 18px;
   color: #999;
-  padding-bottom: 30px;
+  padding: 30px 0;
 }
 
 footer a {

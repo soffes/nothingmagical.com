@@ -104,6 +104,31 @@ section#shares {
 }
 
 
+// Whiskey
+section#whiskey {
+  background: #2d2725;
+  color: #fee9c1;
+
+  a {
+    color: #fee9c1;
+  }
+
+  input {
+    background: #f6e8e3;
+    border-color: #f6e8e3;
+    color: #333;
+
+    &:focus {
+      border-color: #ecc171;
+    }
+  }
+
+  button {
+    background: #e88237;
+  }
+}
+
+
 // Roon
 section#roon {
   background: #f9fbfc;
@@ -182,3 +207,9 @@ section#team {
     }
   }
 }
+
+form.curious {
+  text-align: center;
+  padding-top: 30px;
+}
+
