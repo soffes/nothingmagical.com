@@ -84,38 +84,6 @@ section#about {
 }
 
 
-// Cheddar
-section#cheddar {
-  background: #0881b3;
-  color: #fff;
-
-  a {
-    color: #fff;
-  }
-
-  a.title {
-    display: block;
-    width: 269px;
-    height: 44px;
-    margin: 0 auto 1em;
-
-    &:hover {
-      border-bottom-color: transparent;
-    }
-
-    img {
-      width: 269px;
-      height: 44px;
-    }
-  }
-
-  p:last-child {
-    text-align: center;
-    margin: 2em auto 0;
-  }
-}
-
-
 // Shares
 section#shares {
   background: $shares-green-color;
