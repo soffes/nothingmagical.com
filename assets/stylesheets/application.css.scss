@@ -5,6 +5,10 @@
 
 /* General */
 
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
 html, body {
   @include prefixer(font-smoothing, antialiased, webkit moz spec);
 }
@@ -17,7 +21,7 @@ header {
 
 body, input, button {
   color: #444;
-  font-family: 'Gotham SSm A', 'Gotham SSm B';
+  font-family: 'Whitney A', 'Whitney B';
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
