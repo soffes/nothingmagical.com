@@ -170,6 +170,26 @@ section#roon {
 }
 
 
+// Coins
+section#coins {
+  background: $coins-purple-color;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+
+  p:last-child {
+    text-align: center;
+    margin: 2em auto 0;
+  }
+
+  @media #{$grater-small-media-query} {
+    text-align: center;
+  }
+}
+
+
 // Team
 section#team {
   background: #f7e47c;
