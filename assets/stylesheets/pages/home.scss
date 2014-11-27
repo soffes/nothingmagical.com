@@ -1,10 +1,10 @@
 a.app-store {
-  width: 175px;
-  height: 50px;
+  width: 187px;
+  height: 55px;
 
   img {
-    width: 175px;
-    height: 50px;
+    width: 187px;
+    height: 55px;
   }
 
   &:hover {
@@ -94,8 +94,7 @@ section#shares {
   }
 
   p:last-child {
-    text-align: center;
-    margin: 2em auto 0;
+    margin: 1em auto 0;
   }
 
   @media #{$grater-small-media-query} {
@@ -129,47 +128,6 @@ section#whiskey {
 }
 
 
-// Roon
-section#roon {
-  background: #f9fbfc;
-  color: #909396;
-
-  em {
-    background-color: #fdffb6;
-    padding: 2px;
-    box-shadow: #fdffb6 0 0 5px;
-    color: #21272d;
-  }
-
-  a.title {
-    display: block;
-    width: 269px;
-    height: 44px;
-    margin: 0 auto 1em;
-
-    &:hover {
-      border-bottom-color: transparent;
-    }
-
-    img {
-      width: 269px;
-      height: 44px;
-    }
-  }
-
-  a.app-icon {
-    box-shadow: 0 0 4px rgba(144, 147, 150, 0.8);
-    border-radius: 43px;
-    overflow: hidden;
-  }
-
-  p:last-child {
-    text-align: center;
-    margin: 2em auto 0;
-  }
-}
-
-
 // Coins
 section#coins {
   background: $coins-purple-color;
@@ -180,8 +138,7 @@ section#coins {
   }
 
   p:last-child {
-    text-align: center;
-    margin: 2em auto 0;
+    margin: 1em auto 0;
   }
 
   @media #{$grater-small-media-query} {
