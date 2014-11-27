@@ -18,5 +18,10 @@ map '/assets' do
   run sprockets
 end
 
-require './main'
-run Sinatra::Application
+class NothingMagical < Sinatra::Application
+  get '/' do
+    erb :home
+  end
+end
+
+run NothingMagical.new
