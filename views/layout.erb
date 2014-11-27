@@ -19,9 +19,10 @@ for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElemen
   </header>
   <%= yield %>
   <footer>
-    &copy; 2014 Nothing Magical Inc &mdash; <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%73%61%6d@%6e%6f%74%68%69%6e%67%6d%61%67%69%63%61%6c.%63%6f%6d">Contact</a> &mdash; <a href="http://blog.nothingmagical.com" rel="external nofollow">Blog</a>
+    &copy; <%= Time.now.year %> Nothing Magical Inc. &mdash; <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%73%61%6d@%6e%6f%74%68%69%6e%67%6d%61%67%69%63%61%6c.%63%6f%6d">Contact</a> &mdash; <a href="http://blog.nothingmagical.com" rel="external nofollow">Blog</a>
   </footer>
   <script src="/assets/srcset.min.js"></script>
+  <script src="/assets/externals.js"></script>
   <% if ENV['RACK_ENV'] == 'production' %>
   <script>mixpanel.track('Page View',{'Title':document.title,'URL':window.location.pathname});</script>
   <% end %>
