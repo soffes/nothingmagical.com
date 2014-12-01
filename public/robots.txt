@@ -1,2 +1,5 @@
-# It's cool. Do what you want, robots. Nothing Magical to see.
-# If you just laughed at this, you just got a million cool points.
+# It's cool. Do what you want, robots. Nothing Magical to see here.
+# If you laughed at this, you just got a million cool points.
+
+User-agent: *
+Disallow:
