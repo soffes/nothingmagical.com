@@ -1,16 +1,12 @@
 source 'https://rubygems.org'
 
-ruby '2.1.5'
+ruby '2.2.0'
 
 gem 'sinatra'
 gem 'puma'
 gem 'rack-canonical-host'
 
 gem 'rake'
-
-group :development do
-  gem 'shotgun'
-end
 
 group :assets do
   # Stylesheet
