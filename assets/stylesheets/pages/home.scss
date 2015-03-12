@@ -76,32 +76,6 @@ section {
 }
 
 
-// About
-section#about {
-  background: $about-color;
-  color: #fff;
-}
-
-
-// Shares
-section#shares {
-  background: $shares-green-color;
-  color: #fff;
-
-  a {
-    color: #fff;
-  }
-
-  p:last-child {
-    margin: 1em auto 0;
-  }
-
-  @media #{$grater-small-media-query} {
-    text-align: center;
-  }
-}
-
-
 // Whiskey
 section#whiskey {
   background: #2d2725;
@@ -124,67 +98,4 @@ section#whiskey {
   button {
     background: #e88237;
   }
-}
-
-
-// Coins
-section#coins {
-  background: $coins-purple-color;
-  color: #fff;
-
-  a {
-    color: #fff;
-  }
-
-  p:last-child {
-    margin: 1em auto 0;
-  }
-
-  @media #{$grater-small-media-query} {
-    text-align: center;
-  }
-}
-
-
-// Team
-section#team {
-  background: #f7e47c;
-  color: #4c4e53;
-
-  a {
-    color: #bba633;
-  }
-
-  a.headshot {
-    display: block;
-    text-align: center;
-    width: 190px;
-    margin: 0 auto;
-
-    &:hover {
-      border-bottom: 1px transparent solid;
-    }
-
-    img {
-      width: 190px;
-      height: 190px;
-      display: block;
-      background: asset-url("soffes.png") no-repeat;
-      background-size: 190px 190px;
-      margin: 0 auto 1em;
-
-      @include hidpi {
-        background-image: asset-url("soffes@2x.png");
-      }
-    }
-
-    span.name {
-      display: block;
-    }
-  }
-}
-
-form.curious {
-  text-align: center;
-  padding-top: 30px;
 }
