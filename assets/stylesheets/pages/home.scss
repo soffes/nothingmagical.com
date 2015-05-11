@@ -13,7 +13,7 @@ a.app-store {
 }
 
 section {
-  @include box-sizing(border-box);
+  box-sizing: border-box;
   padding: 40px 20px;
 
   p:last-child {
