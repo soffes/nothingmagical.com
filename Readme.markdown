@@ -1,5 +1,3 @@
-[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/nothingmagical/nothingmagical.com)
-
 # Nothing Magical
 
 [Our website](http://nothingmagical.com). We hope you like it.
@@ -16,3 +14,5 @@ $ npm run dev
 ```
 
 Now the site is running at <http://localhost:3000>.
+
+[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/nothingmagical/nothingmagical.com)
