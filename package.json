@@ -1,0 +1,27 @@
+{
+  "name": "nothingmagical",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "main": "pages/index.js",
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.1.4",
+    "babel-preset-stage-0": "^6.24.1",
+    "next": "^3.0.0-beta6",
+    "styled-components": "^2.0.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "description": "Website for Nothing Magical, Inc.",
+  "repository": "https://github.com/nothingmagical/nothingmagical.com",
+  "homepage": "https://nothingmagical.com",
+  "author": {
+    "name": "Sam Soffes",
+    "email": "sam@soff.es",
+    "url": "https://soff.es"
+  },
+  "license": "MIT"
+}

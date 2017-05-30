@@ -1,16 +1,18 @@
+[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/nothingmagical/nothingmagical.com)
+
 # Nothing Magical
 
 [Our website](http://nothingmagical.com). We hope you like it.
 
 ## Running Locally
 
-Simply run the commands below. You'll need Ruby 1.9.3 or higher and Bundler installed.
+Simply run the commands below. You’ll need Node.js installed.
 
 ```
-$ git clone https://github.com/nothingmagical/nothingmagical.com.git
+$ git clone https://github.com/nothingmagical/nothingmagical.com
 $ cd nothingmagical.com
-$ bundle install
-$ bundle exec shotgun
+$ npm install
+$ npm run dev
 ```
 
-Now the site is running at <http://localhost:9393>.
+Now the site is running at <http://localhost:3000>.
