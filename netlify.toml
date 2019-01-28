@@ -1,4 +1,0 @@
-[[redirects]]
-  from = "https://nothingmagical.netlify.com/*"
-  to = "https://nothingmagical.com/:splat"
-  status = 301
