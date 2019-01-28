@@ -1,1 +1,2 @@
-http://nothingmagical.netlify.com/* http://nothingmagical.com/:splat 301!
+http://nothingmagical.netlify.com/* https://nothingmagical.com/:splat 301!
+https://nothingmagical.netlify.com/* https://nothingmagical.com/:splat 301!
